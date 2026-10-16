@@ -7,8 +7,8 @@ terraform {
 }
 
 provider "minecraft" {
-  address  = "localhost:25575"
-  password = "1025"
+  address  = "10.0.25.234:25575"
+  password = "Chocobros69?"
 }
 
 resource "minecraft_block" "stone" {
@@ -33,7 +33,7 @@ resource "minecraft_block" "treasures" {
 
   position = {
   x        = index(local.blocks, each.key) - 89
-  y        = 80
+  y        = 82
   z        = -572
 }
 }
